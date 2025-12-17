@@ -1,0 +1,35 @@
+.about {
+  position: relative;
+  padding: 80px 20px;
+  background: 
+    linear-gradient(rgba(3, 8, 20, 0.75), rgba(3, 8, 20, 0.85)),
+    url("/images/about-bg.jpg") center/cover no-repeat;
+  color: #eaeaea;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #4cc9f0;
+}
+
+.about img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 16px;
+  margin: 20px auto 30px;
+  display: block;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #dcdcdc;
+}

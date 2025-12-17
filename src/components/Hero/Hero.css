@@ -1,0 +1,39 @@
+.hero {
+  height: 100vh; 
+  background-image: url("/Himachal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.65); 
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #cbd5f5;
+}

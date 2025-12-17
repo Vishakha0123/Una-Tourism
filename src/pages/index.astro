@@ -1,0 +1,54 @@
+---
+import "../styles/global.css";
+
+// React components
+import Navbar from '../components/Navbar/Navbar.jsx';
+import Hero from '../components/Hero/Hero.jsx';
+import About from '../components/About/About.jsx';
+import Places from '../components/Places/Places.jsx';
+import Gallery from '../components/Gallery/Gallery.jsx';
+import Stay from '../components/Stay/Stay.jsx';
+import Plan from '../components/Plan/Plan.jsx';
+import Culture from '../components/Culture/Culture.jsx';
+import Map from '../components/Map/Map.jsx';
+import DetailModal from '../components/DetailModal/DetailModal.jsx';
+import Footer from '../components/Footer/Footer.jsx';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Una Tourism</title>
+  </head>
+  <body>
+    <!-- Navbar might be interactive, load on client -->
+    <Navbar client:load />
+
+    <!-- Hero is static -->
+    <Hero />
+
+    <!-- About section -->
+    <About />
+
+    <!-- Places section with animations -->
+    <Places client:visible />
+
+    <!-- Stay section -->
+    <Stay />
+
+    <!-- Plan section -->
+    <Plan client:load/>
+
+    <!-- Culture section -->
+    <Culture client:load />
+
+    <!-- Map section -->
+    <Map client:load />
+
+    <DetailModal client:load/>
+
+    <!-- Footer -->
+    <Footer />
+  </body>
+</html>
